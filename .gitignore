@@ -4,3 +4,10 @@
 /Landscape.jpg
 /Portrait.jpg
 /sources
+
+node_modules
+
+output/with-rotate/*
+output/without-rotate/*
+!output/with-rotate/.gitkeep
+!output/without-rotate/.gitkeep

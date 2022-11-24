@@ -24,7 +24,7 @@ const fileList = [
 
 fileList.map((file) => {
     const src = file;
-    const output = 'output/with-rotate/' + file;
+    const output = 'output/' + file;
 
     sharp(src)
         .rotate()

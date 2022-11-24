@@ -21,17 +21,6 @@ const fileList = [
     'Portrait_7.jpg',
     'Portrait_8.jpg',
 ];
-fileList.map((file) => {
-    const src = file;
-    const output = 'output/without-rotate/' + file;
-
-    sharp(src)
-        .composite([{ input: './watermark.png', gravity: 'center' }])
-        .sharpen()
-        .withMetadata()
-        .toFile(output)
-
-})
 
 fileList.map((file) => {
     const src = file;
